@@ -2,6 +2,8 @@
 
 **Team Saul Goodman** · Track: Demo · Domain: Agents & Game Theory
 
+**Live demo:** <https://saul-goodman-courtroom.vercel.app>
+
 Prosecution and defense agents compete to build the strongest case from structured, synthetic
 evidence. A **100 % deterministic, exact-arithmetic judge** rules on objections, weighs evidence
 element by element, and delivers a verdict with a hash-chained audit trail. A game-theory layer
@@ -17,6 +19,12 @@ python -m courtroom verify -p chaos -d adaptive     # prove bit-for-bit determin
 python -m courtroom stress --cases 100              # 2,500-trial fuzz run, exits 1 on any failure
 python -m pytest                                    # 483 tests, ~15 s
 ```
+
+The hosted demo is the static web UI (`courtroom/viz/web`, see `vercel.json`) running on the
+pre-exported bundle, so it offers seed-0 trials for six strategy pairings per case plus the 2×2
+Aggressive/Conservative games. Run `python -m courtroom serve` locally for the live API (any seed,
+any pairing, mixed strategies, larger games). After changing cases, agents or
+judge constants, run `python -m courtroom export` and redeploy.
 
 ## What the demo shows
 
