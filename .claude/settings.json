@@ -1,0 +1,20 @@
+{
+  "enabledPlugins": {
+    "pyright-lsp@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "feature-dev@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true,
+    "pr-review-toolkit@claude-plugins-official": true,
+    "code-simplifier@claude-plugins-official": true,
+    "commit-commands@claude-plugins-official": true,
+    "security-guidance@claude-plugins-official": true,
+    "playwright@claude-plugins-official": true,
+    "playground@claude-plugins-official": true,
+    "engineering-advanced-skills@claude-code-skills": true,
+    "engineering-skills@claude-code-skills": true,
+    "statistical-analyst@claude-code-skills": true,
+    "karpathy-coder@claude-code-skills": true,
+    "code-tour@claude-code-skills": true,
+    "demo-video@claude-code-skills": true
+  }
+}
